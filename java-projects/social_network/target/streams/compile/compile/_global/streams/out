@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mD:\day_lap_trinh\java-projects\social_network\app\views\products.scala.html:77:67: ')' expected but double literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m                <td class="text-right">&euro;@("%.2f".format(2.300.000))</td>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\day_lap_trinh\java-projects\social_network\app\views\products.scala.html:79:23: ')' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m            } @* End for loop*@[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

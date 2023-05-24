@@ -1,0 +1,101 @@
+@()
+
+
+
+@main("Welcome") {
+@defining(play.core.PlayVersion.current) { version =>
+
+
+
+@main("Products"){
+    @*Content for Product Page *@
+
+     <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
+     <div class="row">
+      <div class="col-md-2">
+
+        <!-- https://getbootstrap.com/docs/4.0/components/list-group/ -->
+        <div class="list-group">
+          <a href="#" class="list-group-item  list-group-item-action">Tất cả danh mục sản phẩm</a>
+        </div>
+
+      </div>
+
+      <div class="col-md-auto">
+        <!-- https://getbootstrap.com/docs/4.0/content/tables/ -->
+        <table class="table table-hover">
+           <thead>
+              <th scope="col">ID</th>
+              <th scope="col">Tên SP</th>
+              <th scope="col">Phân loại</th>
+              <th scope="col">Mô tả</th>
+              <th scope="col">SLTK</th>
+              <th scope="col">Giá</th>
+            </thead>
+            <tbody>
+            @* Iterate through products, adding a new row for each in the list *@
+            @* for each product in the products list *@
+           
+              <tr scope="row">
+                <td>1</td>
+                <td>LCD.TV</td>
+                <td>Home Entertainment</td>
+                <td>Sony 55 inch LCD TV</td>
+                <td>10</td>
+                <td class="text-right">&euro;@("%.2f".format(850.00))</td>
+              </tr>
+              <tr scope="row">
+                <td>2</td>
+                <td>Bóng đèn</td>
+                <td>Yên Bái</td>
+                <td>Bóng đèn màu vàng</td>
+                <td>3</td>
+                <td class="text-right">&euro;@("%.2f".format(90.000))</td>
+              </tr>
+              <tr scope="row">
+                <td>3</td>
+                <td>Đồng hồ</td>
+                <td>Yên tử</td>
+                <td>Đồng hồ màu đen</td>
+                <td>5</td>
+                <td class="text-right">&euro;@("%.2f".format(600.000))</td>
+              </tr>
+              <tr scope="row">
+                <td>4</td>
+                <td>Lò viba</td>
+                <td>Toàn quốc</td>
+                <td>Viền đất màu nâu</td>
+                <td>2</td>
+                <td class="text-right">&euro;@("%.2f".format(30.000))</td>
+              </tr>
+              <tr scope="row">
+                <td>5</td>
+                <td>Máy nén khí</td>
+                <td>Tuyên Quang</td>
+                <td>Bệnh viện</td>
+                <td>6</td>
+                <td class="text-right">&euro;@("%.2f".format(2.300000))</td>
+              </tr>
+              <tr scope="row">
+                <td>6</td>
+                <td>Máy chiếu</td>
+                <td>Toàn quốc</td>
+                <td>Trường học</td>
+                <td>2</td>
+                <td class="text-right">&euro;@("%.2f".format(5.300000))</td>
+              </tr>
+            } @* End for loop*@
+            </tbody>
+
+            
+            <tfoot>
+              
+              
+            </tfoot>
+          </table>
+      </div>
+
+    
+
+}
+}
